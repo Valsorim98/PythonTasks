@@ -2,8 +2,7 @@ ANIMAL = str(input())
 
 if ANIMAL == "dog":
     print("mammal")
-elif ANIMAL == "crocodile" or ANIMAL == "tortoise" or ANIMAL == "snake":
+elif ANIMAL in ("crocodile", "tortoise", "snake"):
     print("reptile")
 else:
     print("unknown")
-    
