@@ -7,10 +7,12 @@ work_days = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
 weekend = ("Saturday", "Sunday")
 
 def is_working_day(DAY):
+    """If the input is a work day this function will return True"""
 
     return DAY in work_days
 
 def is_weekend(DAY):
+    """If the input is a day of the weekend this function will return True"""
 
     return DAY in weekend
 
