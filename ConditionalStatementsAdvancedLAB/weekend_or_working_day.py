@@ -1,19 +1,9 @@
-DAY = str(input())
+DAY = str(input("Please type a day of the week: "))
 
-if DAY == "Monday":
+if DAY in ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday"):
     print("Working day")
-elif DAY == "Tuesday":
-    print("Working day")
-elif DAY == "Wednesday":
-    print("Working day")
-elif DAY == "Thursday":
-    print("Working day")
-elif DAY == "Friday":
-    print("Working day")
-elif DAY == "Saturday":
-    print("Weekend")
-elif DAY == "Sunday":
+elif DAY in ("Saturday", "Sunday"):
     print("Weekend")
 else:
-    print("Error")
+    print("no " + str(DAY) + " found")
     
