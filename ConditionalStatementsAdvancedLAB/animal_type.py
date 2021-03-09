@@ -1,8 +1,19 @@
-ANIMAL = str(input())
+ANIMAL = str(input("Please type a life form: "))
 
-if ANIMAL == "dog":
-    print("mammal")
-elif ANIMAL in ("crocodile", "tortoise", "snake"):
+reptiles = ("crocodile", "tortoise", "snake")
+mammals = ("dog", "cat")
+
+def is_reptile(ANIMAL):
+
+    return ANIMAL in reptiles
+
+def is_mammal(ANIMAL):
+
+    return ANIMAL in mammals
+
+if is_reptile(ANIMAL):
     print("reptile")
+elif is_mammal(ANIMAL):
+    print("mammal")
 else:
-    print("unknown")
+    print("no " + str(ANIMAL) + " found")
